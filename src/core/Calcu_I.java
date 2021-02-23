@@ -26,7 +26,7 @@ public class Calcu_I implements face {
 		System.out.println(a-b);
 	}
 
-	public void sub(double a , double b) {
+	public void sub(double a, double b) {
 		System.out.println(a-b);
 	}
 	
@@ -43,8 +43,8 @@ public class Calcu_I implements face {
 		
 		a=s1.nextInt();
 		b=s1.nextInt();
-		//a=s1.nextDouble();
-		//b=s1.nextDouble();
+		a=s1.nextDouble();
+		
 		
 		switch(operator) {
 		case '+':
@@ -60,7 +60,4 @@ public class Calcu_I implements face {
 		}
 		
 	}
-	
-	
-
 }
