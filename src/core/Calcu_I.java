@@ -43,7 +43,7 @@ public class Calcu_I implements face {
 		
 		a=s1.nextInt();
 		b=s1.nextInt();
-		a=s1.nextDouble();
+		//a=s1.nextDouble();
 		
 		
 		switch(operator) {
