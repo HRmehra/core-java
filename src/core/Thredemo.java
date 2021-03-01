@@ -9,7 +9,8 @@ public class Thredemo extends Thread{
 				
 				e.printStackTrace();
 			}
-			System.out.println(i);
+			System.out.print(i+" ");
+			System.out.print(Thread.currentThread().getName());
 		}
 	}
 
@@ -18,6 +19,14 @@ public class Thredemo extends Thread{
 		Thredemo t2 =new Thredemo();
 		
 		t1.start();
+		t1.setName("t1-");
+		t1.setDaemon(true);
+		
+		//	t1.join(2000);
+		//t1.setPriority(Thread.MIN_PRIORITY);
+		
 		t2.start();		
+		t2.setName("t2-");
+		t2.setPriority(Thread.MAX_PRIORITY);
 	}
 	}
